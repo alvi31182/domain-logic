@@ -104,11 +104,11 @@ final class OrderId{
     private function validateUuid(string $uuid): void
     {
         if (!Uuid::isValid($uuid)) {
-            throw new InvalidArgumentException("Invalid UUID format from ClientId.");
+            throw new InvalidArgumentException("Invalid UUID format from OrderId.");
         }
 
         if (substr($uuid, 14, 1) !== '7') {
-            throw new InvalidArgumentException("Invalid UUID version from ClientId. Must be version 7.");
+            throw new InvalidArgumentException("Invalid UUID version from OrderId. Must be version 7.");
         }
     }
 }
