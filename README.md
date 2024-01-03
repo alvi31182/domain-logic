@@ -198,7 +198,7 @@ $command = new CreateOrderCommand(
     "California",
     "Los Angeles",
     "123 Main Street",
-    "018ccef6-e367-70ae-ad47-cabf1728971e",
+    "123456789",
     "INV-2024001"
 );
 
